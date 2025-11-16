@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Menna</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Quicksand&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* كل الأكواد بتاعتك هنا */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+    }
+
+    header.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background-color: #0f0f0f;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .highlight {
+      color: #ff0066;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ff0066;
+    }
+
+    /* Animation */
+    .fade-in {
+      animation: fadeInUp 1.2s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 40px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h3 {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .hero-text a {
+      color: #ff0066;
+      text-decoration: none;
+    }
+
+    .hero-text a:hover {
+      text-decoration: underline;
+    }
+
+    footer.socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    footer.socials a {
+      color: white;
+      font-size: 22px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 0, 102, 0.1);
+      border: 2px solid #ff0066;
+      transition: 0.3s ease;
+      text-decoration: none; /* يمنع أي خط افتراضي */
+      vertical-align: middle; /* يظبط الأيقونات داخل الدائرة */
+    }
+
+    footer.socials a:hover {
+      background: #ff0066;
+      color: white;
+      box-shadow: 0 0 15px #ff0066;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <body class="contact-page">
+  <header class="navbar">
+    <div class="logo">
+      <span class="port">Port</span><span class="highlight folio">folio</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <div class="hero-text">
+      <h1>Get In <span class="highlight">Touch</span></h1>
+      <h3>
+        Let’s connect! You can reach me via:<br><br>
+        📧: <a href="mailto:menna.allah.sayyed@gmail.com">menna.allah.sayyed@gmail.com</a><br>
+        🎓: <a href="mailto:35233546@science.helwan.edu.eg">35233546@science.helwan.edu.eg</a><br><br>
+        or through my social media links below 
+      </h3>
+    </div>
+  </section>
+
+  <footer class="socials fade-in">
+    <a href="https://www.facebook.com/share/19qvR3EjcK/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.linkedin.com/in/menna-allah-sayed-768b24355" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/MeNna-Say" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://leetcode.com/u/oLZqN8P8yr/" target="_blank"><i class="fa-solid fa-code"></i></a>
+    <a href="https://www.instagram.com/menna_sayedd1?igsh=am41bHBvZHZzdzVx" target="_blank"><i class="fab fa-instagram"></i></a>
+  </footer>
+</body>
+</html>

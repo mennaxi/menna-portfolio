@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Menna</title>
+  
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Quicksand&family=Poppins&display=swap" rel="stylesheet">
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- INTERNAL CSS FOR ANIMATION -->
+  <style>
+    /* ---------- GLOBAL FONT STYLE ---------- */
+    body, p, h1, h2, h3, a, span {
+      font-family: 'Baloo 2', 'Quicksand', 'Poppins', sans-serif;
+      letter-spacing: 0;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: inherit;
+    }
+
+    /* ---------- FADE / SLIDE ANIMATION ---------- */
+    .fade-in,
+    .slide-up,
+    .slide-in-right {
+      opacity: 0;
+      transform: translateY(30px); /* بداية الحركة */
+      transition: all 1.2s ease;
+    }
+
+    .slide-in-right {
+      transform: translateX(30px);
+    }
+
+    .fade-in.visible,
+    .slide-up.visible,
+    .slide-in-right.visible {
+      opacity: 1;
+      transform: translate(0,0);
+    }
+  </style>
+</head>
+
+<body class="home-page">
+
+  <!-- ---------- NAVBAR ---------- -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="port">Port</span><span class="highlight folio">folio</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ---------- HERO SECTION ---------- -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="fade-in">Hi, I'm <span class="highlight">Menna</span></h1>
+      <h3 class="fade-in">Computer Science & Statistics Student | AI Engineer</h3>
+
+      <div class="social-icons fade-in">
+        <a href="https://www.facebook.com/share/19qvR3EjcK/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/menna-allah-sayed-768b24355" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/MeNna-Say" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/oLZqN8P8yr/" target="_blank"><i class="fa-solid fa-code"></i></a>
+        <a href="https://www.instagram.com/menna_sayedd1?igsh=am41bHBvZHZzdzVx" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <a href="cv.pdf" class="download-btn fade-in" download>Download CV</a>
+    </div>
+
+    <div class="hero-image slide-in-right">
+      <img src="your-image.png" alt="Menna">
+    </div>
+  </section>
+
+  <!-- ---------- SCRIPT FOR ANIMATION ---------- -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade-in, .slide-up, .slide-in-right");
+      elements.forEach((el, i) => {
+        setTimeout(() => el.classList.add("visible"), i * 300);
+      });
+    });
+  </script>
+
+</body>
+</html>

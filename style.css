@@ -1,0 +1,164 @@
+body, p, h1, h2, h3, a ,span {
+  font-family: 'Baloo 2', 'Quicksand', 'Poppins', sans-serif;
+  letter-spacing: 0;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: inherit;
+}
+
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #100e0f;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ---------- NAVBAR ---------- */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+.logo .port {
+  font-size: 45px; /* حجم كبير */
+  font-weight: 700;
+}
+
+.logo .folio {
+  letter-spacing: -1px;
+  font-size: 28px; /* حجم أصغر */
+  font-weight: 700;
+}
+
+.highlight {
+  color: #ff0066;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ff0066;
+  text-shadow: 0 0 10px #ff0066;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px 80px 80px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+  font-weight: 1200;
+}
+
+.hero-text h3 {
+  font-size: 22px;
+  font-weight: normal;
+  color: #ccc;
+  line-height: 1.5;
+}
+.hero-image img {
+      width: 450px;
+      max-width: 100%;
+      border-radius: 50%;
+      margin-left: 100px;
+      margin-top: -1px;
+    }
+/* ---------- SOCIAL ICONS ---------- */
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255, 0, 102, 0.3);
+  border: 1.5px solid #ff0066;
+  background: transparent;
+  transition: 0.3s ease;
+  text-decoration: none;
+  vertical-align: middle; /* يظبط الأيقونات داخل الدائرة */
+}
+.social-icons a:hover {
+  background: #ff0066;
+  transition: 0.3s ease;
+}
+
+/* ---------- DOWNLOAD BUTTON ---------- */
+.download-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 4px 40px;
+  border-radius: 30px;
+  background-color: #080506;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #ff0066;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 0, 102, 0.3);
+  vertical-align: middle;
+}
+
+.download-btn:hover {
+  background: transparent;
+  color: #ff0066;
+  box-shadow: 0 0 25px #ff0066;
+  transform: scale(1.05);
+}
+
